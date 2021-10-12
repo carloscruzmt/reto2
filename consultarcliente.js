@@ -38,8 +38,8 @@ function mostrarRespuesta_cl(items){
                    <td>${items[i].email}</td>
                    <td>${items[i].age}</td>                   
                    <td>
-                        <button onclick="eliminar(${items[i].id})">Eliminar</button>
-                        <a href="detalle.html?id=${items[i].id}">Editar</a>
+                        <button onclick="eliminarcliente(${items[i].id})">Eliminar</button>
+                        <a href="detalle_cl.html?id=${items[i].id}">Editar</a>
                    </td> 
                    </tr>`;
  
