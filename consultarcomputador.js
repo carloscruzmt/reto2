@@ -1,12 +1,12 @@
-function consultar(){
+function consultarcomputador(){
 
     $.ajax({
-        url: "https://gceec35d4655070-computer.adb.sa-saopaulo-1.oraclecloudapps.com/ords/admin/computer/computer",
+        url: "https://gada9b0fed1a0c7-reto1.adb.sa-saopaulo-1.oraclecloudapps.com/ords/admin/computer/computer",
         type: 'GET',
         dataType: 'json',
         success: function(respuesta){
             console.log(respuesta.items);
-            mostrarRespuesta(respuesta.items);
+            mostrarRespuesta_pc(respuesta.items);
         },
         error: function (xhr, status) {
             alert('ha sucedido un problema');
@@ -19,7 +19,7 @@ function consultar(){
 
 }
 
-function mostrarRespuesta(items){
+function mostrarRespuesta_pc(items){
    
     var tabla = `<table border="1">
                   <tr>
@@ -48,5 +48,5 @@ function mostrarRespuesta(items){
     }
     tabla +=`</table>`;
 
-    $("#tabla").html(tabla);
+    $("#tabla_pc").html(tabla);
 }
