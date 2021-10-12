@@ -1,14 +1,14 @@
 	// Agregar Mensaje // 
 function guardarM(){
     let mensaje = {
-        id: +$("#ID").val(),
+        id: +$("#id_msg").val(),
         messagetext:  $("#MESSAGETEXT").val()
     };
 
     console.log("voy a guardar", mensaje);
 
     $.ajax({
-        url: "https://g2c9a808e9381c9-reto2.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message",
+        url: "https://gada9b0fed1a0c7-reto1.adb.sa-saopaulo-1.oraclecloudapps.com/ords/admin/message/message",
         type: 'POST',
         dataType: 'json',
         headers: {
@@ -30,16 +30,16 @@ function guardarM(){
 	// Agregar Cliente //
 function guardarC(){
     let cliente = {
-        id: +$("#ID").val(),
-        name:  $("#NAME").val(),
-        email: $("#EMAIL").val(),
-        age: +$("#AGE").val(),
+        id: +$("#id_cl").val(),
+        name:  $("#name_cl").val(),
+        email: $("#email").val(),
+        age: +$("#age").val(),
     };
 
     console.log("voy a guardar", cliente);
 
     $.ajax({
-        url: "https://g2c9a808e9381c9-reto2.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client",
+        url: "https://gada9b0fed1a0c7-reto1.adb.sa-saopaulo-1.oraclecloudapps.com/ords/admin/client/client",
         type: 'POST',
         dataType: 'json',
         headers: {
@@ -48,32 +48,32 @@ function guardarC(){
         data: JSON.stringify(cliente),
         statusCode:{
             201:function(){
-                consultarC();
+                //consultarC();
                 console.log('Se ha registrado un nuevo Cliente');
             }
         },
     });
-    $("#ID").val(""),
-    $("#NAME").val(""),
-    $("#EMAIL").val(""),
-    $("#AGE").val("")
+    //$("#ID").val(""),
+    //$("#NAME").val(""),
+    //$("#EMAIL").val(""),
+    //$("#AGE").val("")
 }
 
 
 	// Agregar Computador //
 function guardar(){
     let computador = {
-        id: +$("#ID").val(),
-        brand:  $("#BRAND").val(),
-        model: +$("#MODEL").val(),
-        category_id: +$("#CATEGORY_ID").val(),
-        name: $("#NAME").val()
+        id: +$("#id_pc").val(),
+        brand:  $("#brand").val(),
+        model: +$("#model").val(),
+        category_id: +$("#category_id").val(),
+        name: $("#name").val()
     };
 
     console.log("voy a guardar", computador);
 
     $.ajax({
-        url: "https://g2c9a808e9381c9-reto2.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/computer/computer",
+        url: "https://gada9b0fed1a0c7-reto1.adb.sa-saopaulo-1.oraclecloudapps.com/ords/admin/computer/computer",
         type: 'POST',
         dataType: 'json',
         headers: {
@@ -82,14 +82,14 @@ function guardar(){
         data: JSON.stringify(computador),
         statusCode:{
             201:function(){
-                consultar();
+                //consultar();
                 console.log('Se ha registrado un nuevo computador');
             }
         },
     });
-    $("#ID").val(""),
-    $("#BRAND").val(""),
-    $("#MODEL").val(""),
-    $("#CATEGORY_ID").val(""),
-    $("#NAME").val("")
+    //$("#ID").val(""),
+    //$("#BRAND").val(""),
+    //$("#MODEL").val(""),
+    //$("#CATEGORY_ID").val(""),
+    //$("#NAME").val("")
 }
