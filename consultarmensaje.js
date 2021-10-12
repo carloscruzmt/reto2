@@ -34,8 +34,8 @@ function mostrarRespuesta_msg(items){
                    <td>${items[i].id}</td>
                    <td>${items[i].messagetext}</td>                                     
                    <td>
-                        <button onclick="eliminar(${items[i].id})">Eliminar</button>
-                        <a href="detalle.html?id=${items[i].id}">Editar</a>
+                        <button onclick="eliminarmensaje(${items[i].id})">Eliminar</button>
+                        <a href="detalle_msg.html?id=${items[i].id}">Editar</a>
                    </td> 
                    </tr>`;
  
