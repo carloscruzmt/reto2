@@ -2,7 +2,7 @@ function com_actualizar(){
     console.log("ejecutando funcion para actualizar");
 
     let computador = {
-        id: +$("#id").val(),
+        id: +$("#id_pc").val(),
         brand:  $("#brand").val(),
         model: +$("#model").val(),
         category_id: +$("#category_id").val(),
@@ -12,7 +12,7 @@ function com_actualizar(){
     console.log(computador);
 
     $.ajax({
-        url: "https://g2cf131e8b72bef-db202109301853.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/computer/computer",
+        url: "https://gada9b0fed1a0c7-reto1.adb.sa-saopaulo-1.oraclecloudapps.com/ords/admin/computer/computer",
         type: 'PUT',
         dataType: 'json',
         headers: {
