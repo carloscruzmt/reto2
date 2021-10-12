@@ -2,15 +2,13 @@
     <head>
         <meta charset="utf-8">
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script type="text/javascript" src="js/consultar_pc.js"></script>
-        <script type="text/javascript" src="js/guardar_pc.js"></script>
-        <script type="text/javascript" src="js/eliminar_pc.js"></script>
-        <script type="text/javascript" src="js/consultar_cl.js"></script>
-        <script type="text/javascript" src="js/guardar_cl.js"></script>
-        <script type="text/javascript" src="js/eliminar_cl.js"></script>
-        <script type="text/javascript" src="js/consultar_msg.js"></script>
-        <script type="text/javascript" src="js/guardar_msg.js"></script>
-        <script type="text/javascript" src="js/eliminar_msg.js"></script>
+        <script type="text/javascript" src="js/consultarcomputador.js"></script>
+        <script type="text/javascript" src="js/consultarmensaje.js"></script>
+        <script type="text/javascript" src="js/consultarcliente.js"></script>
+        <script type="text/javascript" src="js/eliminar.js"></script> 
+        <script type="text/javascript" src="js/eliminarcliente.js"></script>
+        <script type="text/javascript" src="js/eliminarmensaje.js"></script>
+        <script type="text/javascript" src="js/agregar.js"></script>
     </head>
 
     <body>
@@ -21,10 +19,10 @@
         MODEL <input type="number" id="model" /> <br/>
         CATEGORY ID <input type="number" id="category_id" /> <br/>
         NAME <input type="text" id="name" /> <br/>
-        <button onclick="guardar_pc()">Guardar</button>
+        <button onclick="guardar()">Guardar</button>
         <br/>
         <h4>INFORME COMPUTADORES</h4>
-        <button onclick="consultar_pc()">Consultas</button>
+        <button onclick="consultarcomputador()">Consultas</button>
         <div id="tabla_pc">
             <!-- Espacio para la tabla -->
         </div>
@@ -36,10 +34,10 @@
         NAME <input type="text" id="name_cl" /> <br/>
         EMAIL <input type="text" id="email" /> <br/>
         AGE <input type="number" id="age" /> <br/>
-        <button onclick="guardar_cl()">Guardar</button>
+        <button onclick="guardarC()">Guardar</button>
         <br/>
         <h4>INFORME CLIENTES</h4>
-        <button onclick="consultar_cl()">Consultas</button>
+        <button onclick="consultarcliente()">Consultas</button>
         <div id="tabla_cl">
             <!-- Espacio para la tabla -->
         </div>
@@ -49,10 +47,10 @@
         <h4>SUGERENCIAS</h4>
         ID <input type="number" id="id_msg" /> <br/>
         MESSAGETEXT <input type="text" id="messagetext" /> <br/>
-        <button onclick="guardar_msg()">Guardar</button>
+        <button onclick="guardarM()">Guardar</button>
         <br/>
         <h4>MENSAJES</h4>
-        <button onclick="consultar_msg()">Consultas</button>
+        <button onclick="consultarmensaje()">Consultas</button>
         <div id="tabla_msg">
             <!-- Espacio para la tabla -->
         </div>
