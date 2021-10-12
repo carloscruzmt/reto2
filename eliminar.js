@@ -8,7 +8,7 @@ function eliminar(identificador){
     console.log(computer);
 
     $.ajax({
-        url: "https://gca4a673ceb8224-computer.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/computer/computer",
+        url: "https://gada9b0fed1a0c7-reto1.adb.sa-saopaulo-1.oraclecloudapps.com/ords/admin/computer/computer",
         type: 'DELETE',
         dataType: 'json',
         headers: {
