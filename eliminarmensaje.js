@@ -8,7 +8,7 @@ function eliminarmensaje(identificador){
     console.log(message);
 
     $.ajax({
-        url: "https://gca4a673ceb8224-computer.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/message/message",
+        url: "https://gada9b0fed1a0c7-reto1.adb.sa-saopaulo-1.oraclecloudapps.com/ords/admin/message/message",
         type: 'DELETE',
         dataType: 'json',
         headers: {
