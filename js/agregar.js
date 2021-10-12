@@ -2,7 +2,7 @@
 function guardarM(){
     let mensaje = {
         id: +$("#id_msg").val(),
-        messagetext:  $("#MESSAGETEXT").val()
+        messagetext:  $("#messagetext").val()
     };
 
     console.log("voy a guardar", mensaje);
