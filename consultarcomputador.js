@@ -41,7 +41,7 @@ function mostrarRespuesta_pc(items){
                    <td>${items[i].name}</td>
                    <td>
                         <button onclick="eliminar(${items[i].id})">Eliminar</button>
-                        <a href="detalle.html?id=${items[i].id}">Editar</a>
+                        <a href="detalle_pc.html?id=${items[i].id}">Editar</a>
                    </td> 
                    </tr>`;
  
