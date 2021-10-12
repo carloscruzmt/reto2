@@ -21,6 +21,6 @@ function eliminarcliente(identificador){
             }
         },
     });
-
+    consultarcliente();
 
 }

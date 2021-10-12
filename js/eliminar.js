@@ -21,6 +21,6 @@ function eliminar(identificador){
             }
         },
     });
-
+    consultarcomputador();
 
 }

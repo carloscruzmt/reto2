@@ -17,13 +17,13 @@ function guardarM(){
         data: JSON.stringify(mensaje),
         statusCode:{
             201:function(){
-                consultarM();
-                console.log('Se ha registrado un nuevo Mensaje');
+                consultarmensaje();
+                alert('Se ha registrado un nuevo Mensaje');
             }
         },
     });
-    $("#ID").val(""),
-    $("#MESSAGETEXT").val("")
+    $("#id_msg").val(""),
+    $("#messagetext").val("")
 }
 
 
@@ -48,15 +48,15 @@ function guardarC(){
         data: JSON.stringify(cliente),
         statusCode:{
             201:function(){
-                //consultarC();
-                console.log('Se ha registrado un nuevo Cliente');
+                consultarcliente();
+                alert('Se ha registrado un nuevo Cliente');
             }
         },
     });
-    //$("#ID").val(""),
-    //$("#NAME").val(""),
-    //$("#EMAIL").val(""),
-    //$("#AGE").val("")
+    $("#id_cl").val(""),
+    $("#name_cl").val(""),
+    $("#email").val(""),
+    $("#age").val("")
 }
 
 
@@ -82,14 +82,14 @@ function guardar(){
         data: JSON.stringify(computador),
         statusCode:{
             201:function(){
-                //consultar();
-                console.log('Se ha registrado un nuevo computador');
+                consultarcomputador();
+                alert('Se ha registrado un nuevo computador');
             }
         },
     });
-    //$("#ID").val(""),
-    //$("#BRAND").val(""),
-    //$("#MODEL").val(""),
-    //$("#CATEGORY_ID").val(""),
-    //$("#NAME").val("")
+    $("#id_pc").val(""),
+    $("#brand").val(""),
+    $("#model").val(""),
+    $("#category_id").val(""),
+    $("#name").val("")
 }

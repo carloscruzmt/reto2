@@ -21,6 +21,6 @@ function eliminarmensaje(identificador){
             }
         },
     });
-
+    consultarmensaje();
 
 }
